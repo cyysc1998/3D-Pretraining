@@ -1,0 +1,77 @@
+# Experiment
+exp_name: trans_l1_lr0.01
+dataset: shapenet
+cuda: True
+parallel: False
+
+
+# Model
+model: consnet
+decoder: insresblock
+pretrain_path: ./model.pkl
+
+# use resgcn
+nlayers: 3
+
+# encoder
+wide: 64
+
+
+# Hyper Parameter
+batch_size: 12
+test_batch_size: 12
+epochs: 200
+use_sgd: True
+lr: 0.0001 # sdg / 100, adam / 1
+momentum: 0.9
+scheduler: coswarm
+
+num_points: 1024
+dropout: 0.5
+emb_dims: 1024
+k: 40
+
+# Part Segmention
+class_choice: None
+
+
+# add l2 loss
+l2loss: False
+l2_param: 0.01
+
+# add l1 loss
+l1loss: False
+l1_param: 1
+
+# add embed_cross_entropy loss
+embed_loss: True
+
+# add emd_l1loss
+emd_l1loss: False
+emd_l1loss_param: 0.1
+
+
+# add centre loss
+centreloss: False
+centreloss_eps: 0.2
+centre_param: 0.2
+
+
+# Condition
+loss: chamfer
+pretrain_model: sem # sem / cls
+task: 2obj # 1obj_rotate / 2obj / alter
+extra: concat # concat / adain
+extra_len: 3 # 2: use xy/yz/xz, 3: use xy/yz/xz one hot
+
+mixup: add # add / emd
+use_one_hot: False
+eval: False
+valid: True
+
+
+
+
+
+
+
