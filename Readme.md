@@ -4,7 +4,8 @@
 # 3D-Pretraining
 Self-supervised Point Cloud Representation Learning via Separating Mixed Shapes
 
-[pdf](https://www.zdzheng.xyz/files/TMM_3D_Pre_Training.pdf)
+[[pdf]](https://www.zdzheng.xyz/files/TMM_3D_Pre_Training.pdf)
+[[poster]](https://www.zdzheng.xyz/files/Poster-TMM.pdf)
 
 <img src=https://user-images.githubusercontent.com/35159700/224227097-b8335d28-f481-47bb-bfcb-05c8ca540dc6.png width=50% />
 
